@@ -1,20 +1,20 @@
 import styled from "styled-components"
 
 export const Container = styled.header`
-  background: var(--purple);
+  padding: 38.75px 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   h1 {
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
   button {
-    background: var(--gradient2);
-    padding: 100px;
-
-    :hover {
-      filter: brightness(1.1);
-      transition: 200ms;
-      cursor: pointer;
-    }
+    background: var(--black);
   }
+`
+
+export const Cards = styled.div`
+  display: flex;
 `

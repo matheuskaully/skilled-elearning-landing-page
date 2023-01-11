@@ -1,10 +1,16 @@
-import { Container } from "./styles"
+import { Container, Cards } from "./styles"
+import Btn from "../GetStartedButton"
+import logoImg from "../../assets/logo-dark.svg"
+import Card from "../Card"
 
 export default function Header() {
   return (
     <Container>
-      <h1>Hello World</h1>
-      <button>Click me</button>
+      <img src={logoImg} alt="Logo" />
+
+      <a href="#" target="_blank">
+        <Btn />
+      </a>
     </Container>
   )
 }
