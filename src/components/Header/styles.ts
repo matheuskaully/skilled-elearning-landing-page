@@ -1,20 +1,27 @@
-import styled from "styled-components"
+import styled, { css } from 'styled-components';
+import media from 'styled-media-query';
 
 export const Container = styled.header`
-  padding: 38.75px 165px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  ${({ theme }) => css`
+    max-width: ${theme.grid.container};
+    width: 100%;
+    margin-top: ${theme.spacings.medium};
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+    padding-inline: ${theme.spacings.xsmall};
 
-  h1 {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-  }
+    ${media.lessThan('medium')`
+      margin-top: ${theme.spacings.small};
+    `}
 
-  button {
-    background: var(--black);
-  }
-`
+    ${media.lessThan('small')`
+      margin-top: ${theme.spacings.xsmall};
+    `}
+  `}
+`;
 
 export const Cards = styled.div`
   display: flex;
-`
+`;

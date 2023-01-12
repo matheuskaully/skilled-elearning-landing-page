@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Btn = styled.button`
+export const Button = styled.button`
   width: 167px;
   height: 56px;
   border-radius: 28px;
@@ -13,8 +13,8 @@ export const Btn = styled.button`
 
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     opacity: 80%;
     transition: 200ms;
   }
-`
+`;
