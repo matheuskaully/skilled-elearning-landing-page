@@ -21,7 +21,3 @@ export const Container = styled.header`
     `}
   `}
 `;
-
-export const Cards = styled.div`
-  display: flex;
-`;
