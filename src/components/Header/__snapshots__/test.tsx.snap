@@ -1,0 +1,153 @@
+// Vitest Snapshot v1
+
+exports[`Header > should render header component 1`] = `
+.c0 {
+  max-width: 110rem;
+  width: 100%;
+  margin-top: 3.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-inline: auto;
+  padding-inline: 1.6rem;
+}
+
+.c1 {
+  background: #13183F;
+  width: 167px;
+  height: 56px;
+  border-radius: 28px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.c1:hover {
+  background: #666CA3;
+}
+
+.c1:hover {
+  opacity: 80%;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  background: #666CA3;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    margin-top: 2.4rem;
+  }
+}
+
+@media (max-width:450px) {
+  .c0 {
+    margin-top: 1.6rem;
+  }
+}
+
+<header
+  class="c0"
+>
+  <img
+    alt="skilled"
+    src="/src/assets/logo-dark.svg"
+  />
+  <button
+    class="c1"
+  >
+    Get Started
+  </button>
+</header>
+`;
+
+exports[`Heading > should render header component 1`] = `
+.c0 {
+  max-width: 110rem;
+  width: 100%;
+  margin-top: 3.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-inline: auto;
+  padding-inline: 1.6rem;
+}
+
+.c1 {
+  background: #13183F;
+  width: 167px;
+  height: 56px;
+  border-radius: 28px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.c1:hover {
+  background: #666CA3;
+}
+
+.c1:hover {
+  opacity: 80%;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  background: #666CA3;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    margin-top: 2.4rem;
+  }
+}
+
+@media (max-width:450px) {
+  .c0 {
+    margin-top: 1.6rem;
+  }
+}
+
+<header
+  class="c0"
+>
+  <img
+    alt="skilled"
+    src="/src/assets/logo-dark.svg"
+  />
+  <button
+    class="c1"
+  >
+    Get Started
+  </button>
+</header>
+`;
