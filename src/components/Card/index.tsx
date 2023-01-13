@@ -1,17 +1,21 @@
-import { Container } from "./styles"
-import businessImg from "../../assets/icon-business.svg"
+import * as S from "./styles"
 
-export default function Card() {
+interface CardProps {
+  title: string;
+  paragraph: string;
+  srcIconImg: string;
+}
+
+export default function Card({title, paragraph, srcIconImg}: CardProps) {
   return (
-    <Container>
-      <span>Animation</span>
-      <p>
-        Learn the latest animation techniques to 
-        create stunning motion design and captivate 
-        your audience.
-      </p>
+    <S.Container>
+      <span>{title}</span>
+      <p>{paragraph}</p>
       <a href="#">Get Started</a>
-      <img src={businessImg} alt="business icon" />
-    </Container>
+      <img 
+        src={srcIconImg} 
+        alt={`${title} icon`} 
+      />
+    </S.Container>
   )
 }
