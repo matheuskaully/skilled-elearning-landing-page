@@ -12,7 +12,7 @@ interface Radius {
 
 interface Colors {
   primary: string;
-  secondary: string;
+  dark: string;
   lightPurple: string;
   gray: string;
   white: string;

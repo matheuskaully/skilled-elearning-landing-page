@@ -35,13 +35,13 @@ export const theme: DefaultTheme = {
   },
   colors: {
     primary: '#F74780',
-    secondary: '#13183F',
+    dark: '#13183F',
     lightPurple: '#666CA3',
     gray: '#83869A',
     white: '#FFFFFF',
     pink: '#FFA7C3',
-    primaryGradient: '180deg, #FF6F48 0.04%, #F02AA6 100%',
-    secundaryGradient: '180deg, #4851FF 0%, #F02AA6 99.92%'
+    primaryGradient: ' linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%)',
+    secundaryGradient: ' linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%)'
   },
   spacings: {
     xxsmall: '0.8rem',
