@@ -1,4 +1,4 @@
-import * as S from "./styles"
+import * as S from './styles';
 
 interface CardProps {
   title: string;
@@ -6,16 +6,13 @@ interface CardProps {
   srcIconImg: string;
 }
 
-export default function Card({title, paragraph, srcIconImg}: CardProps) {
+export default function Card({ title, paragraph, srcIconImg }: CardProps) {
   return (
     <S.Container>
+      <img src={srcIconImg} alt={title} />
       <span>{title}</span>
       <p>{paragraph}</p>
       <a href="#">Get Started</a>
-      <img 
-        src={srcIconImg} 
-        alt={`${title} icon`} 
-      />
     </S.Container>
-  )
+  );
 }
