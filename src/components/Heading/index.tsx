@@ -27,7 +27,7 @@ export const Heading = styled('h1').attrs<HeadingProps>(({ as = 'h1' }) => {
   as;
 })<HeadingProps>`
   ${({ theme, as = 'h1' }) => css`
-    color: ${theme.colors.secondary};
+    color: ${theme.colors.dark};
     font-family: ${theme.font.family};
     font-weight: ${theme.font.extraBold};
     ${modifiers[as](theme)}
