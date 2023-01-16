@@ -1,34 +1,45 @@
-import styled, { css } from 'styled-components';
+import styled, { css, DefaultTheme } from 'styled-components';
+import { ButtonProps } from '.';
 
-interface ButtonProps {
-  backgroundColor: string;
-  hoverColor: string;
-}
+type ButtonStyleProps = Pick<ButtonProps, 'variant'>;
 
-export const Button = styled.button<ButtonProps>` 
-  background: ${(props) => props.backgroundColor};
-  
-  &:hover {
-    background: ${(props) => props.hoverColor};
-  }
+const modifiers = {
+  primary: (theme: DefaultTheme) => css`
+    background: ${theme.colors.primaryGradient};
+    :hover {
+      opacity: 80%;
+    }
+  `,
+  secondary: (theme: DefaultTheme) => css`
+    background: ${theme.colors.secundaryGradient};
+    :hover {
+      opacity: 50%;
+    }
+  `,
+  dark: (theme: DefaultTheme) => css`
+    background: ${theme.colors.dark};
 
-  ${({ theme }) => css`
-    width: 167px;
-    height: 56px;
+    :hover {
+      background: ${theme.colors.lightPurple};
+    }
+  `
+};
+
+export const Button = styled.button<ButtonStyleProps>`
+  ${({ theme, variant = 'primary' }) => css`
+    ${!!variant && modifiers[variant](theme)}
+
+    line-height: 2.4rem;
     border-radius: 28px;
+    padding: ${theme.spacings.xsmall} ${theme.spacings.medium};
     border: none;
     font-size: 18px;
     font-weight: 700;
-    line-height: 28px;
+
     letter-spacing: 0px;
     color: ${theme.colors.white};
-    
-    cursor: pointer;
 
-    &:hover {
-      opacity: 80%;
-      transition: ${theme.transition.fast};
-      background: ${theme.colors.lightPurple};
-    }
+    cursor: pointer;
+    transition: background ${theme.transition.default};
   `}
 `;

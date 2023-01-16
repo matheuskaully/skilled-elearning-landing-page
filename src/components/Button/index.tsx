@@ -1,17 +1,18 @@
 import * as S from './styles';
 
-interface ButtonProps {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  backgroundColor: string;
-  hoverColor: string;
+  variant?: 'primary' | 'secondary' | 'dark';
 }
 
-export function Button({ children, backgroundColor, hoverColor }: ButtonProps) {
+export function Button({
+  children,
+  variant = 'primary',
+  ...props
+}: ButtonProps) {
   return (
-    <S.Button
-      backgroundColor={backgroundColor}
-      hoverColor={hoverColor}
-    >
+    <S.Button variant={variant} {...props}>
       {children}
     </S.Button>
   );
