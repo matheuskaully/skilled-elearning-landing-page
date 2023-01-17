@@ -8,12 +8,12 @@ export default function Header() {
     <S.Container>
       <img src={logoImg} alt="skilled" />
 
-      <Button 
+      <Button
         backgroundColor={theme.colors.secondary}
         hoverColor={theme.colors.lightPurple}
       >
         Get Started
-      </Button> 
+      </Button>
     </S.Container>
   );
 }

@@ -6,17 +6,16 @@ export default function App() {
   return (
     <>
       <Header />
-      {
-        data.map(item => {
-          return (
-            <Card 
-              title={item.title} 
-              paragraph={item.paragraph} 
-              srcIconImg={item.srcIcon} 
-            />
-          )
-        })
-      }
+      {data.map((item) => {
+        return (
+          <Card
+            key={item.title}
+            title={item.title}
+            paragraph={item.paragraph}
+            srcIconImg={item.srcIcon}
+          />
+        );
+      })}
     </>
   );
 }
